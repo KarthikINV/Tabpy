@@ -1,1 +1,1 @@
-web: export TABPY_PORT=$PORT && export TABPY_PWD_FILE=./tabpyauth.txt && tabpy-user add -u $USERNAME -p $PASSWORD -f ./tabpyauth.txt && tabpy --config tabpy.conf
+web: export TABPY_PORT=$PORT && export TABPY_PWD_FILE=./tabpyauth.txt && tabpy-user add -u $USERNAME -p $PASSWORD -f ./tabpyauth.txt && tabpy --config tabpy.conf && tabpy-deploy-models tabpy.conf
